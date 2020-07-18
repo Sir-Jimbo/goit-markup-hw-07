@@ -1,0 +1,37 @@
+/*social-links*/
+.social-links {
+  @include typedisplay($display);
+}
+
+.social-links .link {
+  @include typedisplay(inline-flex);
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: none;
+
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  & .link:hover,
+  & .link:focus {
+    border-radius: 50%;
+    box-shadow: none;
+    cursor: pointer;
+    --color4: $primary-text-color;
+    background-color: $accent-color;
+  }
+}
+
+.social-links .links:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-links {
+  @include typedisplay($display);
+  width: 20px;
+  height: 20px;
+}
