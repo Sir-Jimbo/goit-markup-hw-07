@@ -85,7 +85,7 @@
     cursor: pointer;
   }
   .form-input:focus ~ & {
-    --color1: $accent-color;
+    fill: $accent-color;
   }
 }
 
@@ -210,7 +210,7 @@
   &:hover .icon-close-black,
   &:focus .icon-close-black {
     cursor: pointer;
-    --color1: $accent-color;
+    fill: $accent-color;
   }
 }
 

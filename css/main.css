@@ -323,7 +323,7 @@ body {
 }
 
 .form-input:focus ~ .icon-input {
-  --color1: $accent-color;
+  fill: #2196f3;
 }
 
 .form-comment {
@@ -458,7 +458,7 @@ body {
 .btn-close:hover .icon-close-black,
 .btn-close:focus .icon-close-black {
   cursor: pointer;
-  --color1: $accent-color;
+  fill: #2196f3;
 }
 
 .icon-close-black {
