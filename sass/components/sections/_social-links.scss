@@ -11,17 +11,13 @@
   height: 44px;
   border-radius: 50%;
   box-shadow: none;
-
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  & .link:hover,
-  & .link:focus {
+  transition: all 250ms $animation-timing-function;
+  &:hover,
+  &:focus {
     border-radius: 50%;
     box-shadow: none;
     cursor: pointer;
-    --color4: $primary-text-color;
+
     background-color: $accent-color;
   }
 }
@@ -34,4 +30,10 @@
   @include typedisplay($display);
   width: 20px;
   height: 20px;
+  fill: $icon-color;
+
+  .link:hover &,
+  .link:focus & {
+    fill: $primary-text-color;
+  }
 }
