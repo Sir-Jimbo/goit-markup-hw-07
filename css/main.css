@@ -148,19 +148,30 @@ body {
 
 .address-link:hover, .address-link:focus {
   color: #2196f3;
-  fill: #2196f3;
 }
 
 .icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: #757575;
+}
+
+.address-link:hover .icon-mail,
+.address-link:focus .icon-mail {
+  fill: #2196f3;
 }
 
 .icon-mobile {
   width: 10px;
   height: 15px;
   margin-right: 10px;
+  fill: #757575;
+}
+
+.address-link:hover .icon-mobile,
+.address-link:focus .icon-mobile {
+  fill: #2196f3;
 }
 
 /*banner*/
